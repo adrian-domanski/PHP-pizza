@@ -42,6 +42,11 @@
                 $errors['e_ingredients'] = "Ingregients must be a comma separated list!";
             }
         }
+
+        // If no errors redirect to the home page
+        if(!$form_err) {
+            header('Location: index.php');
+        }
     }
 
 
